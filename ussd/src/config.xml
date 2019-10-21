@@ -1,0 +1,58 @@
+<rule>
+    <services>
+        <service key="43">
+            <name>cw</name>
+            <activate>*43#</activate>
+            <query>*#43#</query>
+            <cancel>#43#</cancel>
+            <description> </description>
+        </service>
+        <service key="21">
+            <name>cfu</name>
+            <activate>*21*TN#</activate>
+            <query>*#21#</query>
+            <cancel>#21#</cancel>
+            <description>TN</description>
+        </service>
+        <service key="67">
+            <name>cfb</name>
+            <activate>*67*TN#</activate>
+            <query>*#67#</query>
+            <cancel>#67#</cancel>
+            <description>TN</description>
+        </service>
+        <service key="61">
+            <name>cfnr</name>
+            <activate>*61*TN#</activate>
+            <query>*#61#</query>
+            <cancel>#61#</cancel>
+            <description>TN</description>
+        </service>
+        <service key="62">
+            <name>cfnrc</name>
+            <activate>*62*TN#</activate>
+            <query>*#62#</query>
+            <cancel>#62#</cancel>
+            <description>TN</description>
+        </service>
+        <service key="63">
+            <name>cfnl</name>
+            <activate>*63*TN#</activate>
+            <query>*#63#</query>
+            <cancel>#63#</cancel>
+            <description>TN</description>
+        </service>
+        <service key="95">
+            <name>conf3pty</name>
+            <activate>*95*TN#</activate>
+            <query>*#95#</query>
+            <cancel>#95#</cancel>
+            <description> </description>
+        </service>
+    </services>
+
+    <params>
+        <param activate="active" query="query" cancel="deactive" use="">ac_qr_deac</param>
+    </params>
+
+</rule>
