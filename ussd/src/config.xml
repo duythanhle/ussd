@@ -5,7 +5,7 @@
             <activate>*43#</activate>
             <query>*#43#</query>
             <cancel>#43#</cancel>
-            <description> </description>
+            <param>ac_qr_deac</param>
         </service>
         <service key="21">
             <name>cfu</name>
@@ -13,6 +13,7 @@
             <query>*#21#</query>
             <cancel>#21#</cancel>
             <description>TN</description>
+            <param>ac_qr_deac</param>
         </service>
         <service key="67">
             <name>cfb</name>
@@ -20,6 +21,7 @@
             <query>*#67#</query>
             <cancel>#67#</cancel>
             <description>TN</description>
+            <param>ac_qr_deac</param>
         </service>
         <service key="61">
             <name>cfnr</name>
@@ -27,6 +29,7 @@
             <query>*#61#</query>
             <cancel>#61#</cancel>
             <description>TN</description>
+            <param>ac_qr_deac</param>
         </service>
         <service key="62">
             <name>cfnrc</name>
@@ -34,6 +37,7 @@
             <query>*#62#</query>
             <cancel>#62#</cancel>
             <description>TN</description>
+            <param>ac_qr_deac</param>
         </service>
         <service key="63">
             <name>cfnl</name>
@@ -41,18 +45,36 @@
             <query>*#63#</query>
             <cancel>#63#</cancel>
             <description>TN</description>
+            <param>ac_qr_deac</param>
         </service>
         <service key="95">
             <name>conf3pty</name>
             <activate>*95*TN#</activate>
             <query>*#95#</query>
             <cancel>#95#</cancel>
-            <description> </description>
+            <param>ac_qr_deac</param>
+        </service>
+        <service key="99">
+            <name>test</name>
+            <activate>*99*TN*AB#</activate>
+            <query>*#99#</query>
+            <cancel>#99#</cancel>
+            <description>TN AB</description>
+            <param>a_q_d</param>
         </service>
     </services>
 
     <params>
-        <param activate="active" query="query" cancel="deactive" use="">ac_qr_deac</param>
+        <param key="ac_qr_deac">
+            <activate>active</activate>
+            <query>query</query>
+            <cancel>deactive</cancel>
+        </param>
+        <param key="a_q_d">
+            <activate>a</activate>
+            <query>q</query>
+            <cancel>d</cancel>
+        </param>
     </params>
 
 </rule>

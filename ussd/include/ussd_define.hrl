@@ -64,39 +64,48 @@
   "43"=>cw,
   "95"=>conf_3pty}).
 
--record(info,{
+-record(service_info,{
   name,
   activate,
   query,
   cancel,
   use,
-  description
+  description,
+  param
 }).
-
-
--record(services, {
-  default = [],
-  value = []
+-record(param_info,{
+  activate,
+  query,
+  cancel,
+  use
 }).
-
 
 -record(rule, {
   default = [],
   value = []
 }).
 
-
--record(key,{
-  value
+-record(services, {
+  default = [],
+  value = []
 }).
+
 -record(service, {
-  key = [],
+  key,
   info
 }).
 
+-record(key, {
+  value
+}).
 
 
 -record(params, {
   default = [],
   value = []
 }).
+-record(param, {
+  key,
+  info
+}).
+
