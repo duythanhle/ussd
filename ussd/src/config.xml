@@ -1,80 +1,50 @@
 <rule>
-    <services>
-        <service key="43">
-            <name>cw</name>
-            <activate>*43#</activate>
-            <query>*#43#</query>
-            <cancel>#43#</cancel>
-            <param>ac_qr_deac</param>
-        </service>
-        <service key="21">
-            <name>cfu</name>
-            <activate>*21*TN#</activate>
-            <query>*#21#</query>
-            <cancel>#21#</cancel>
-            <description>TN</description>
-            <param>ac_qr_deac</param>
-        </service>
-        <service key="67">
-            <name>cfb</name>
-            <activate>*67*TN#</activate>
-            <query>*#67#</query>
-            <cancel>#67#</cancel>
-            <description>TN</description>
-            <param>ac_qr_deac</param>
-        </service>
-        <service key="61">
-            <name>cfnr</name>
-            <activate>*61*TN#</activate>
-            <query>*#61#</query>
-            <cancel>#61#</cancel>
-            <description>TN</description>
-            <param>ac_qr_deac</param>
-        </service>
-        <service key="62">
-            <name>cfnrc</name>
-            <activate>*62*TN#</activate>
-            <query>*#62#</query>
-            <cancel>#62#</cancel>
-            <description>TN</description>
-            <param>ac_qr_deac</param>
-        </service>
-        <service key="63">
-            <name>cfnl</name>
-            <activate>*63*TN#</activate>
-            <query>*#63#</query>
-            <cancel>#63#</cancel>
-            <description>TN</description>
-            <param>ac_qr_deac</param>
-        </service>
-        <service key="95">
-            <name>conf3pty</name>
-            <activate>*95*TN#</activate>
-            <query>*#95#</query>
-            <cancel>#95#</cancel>
-            <param>ac_qr_deac</param>
-        </service>
-        <service key="99">
-            <name>test</name>
-            <activate>*99*TN*AB#</activate>
-            <query>*#99#</query>
-            <cancel>#99#</cancel>
-            <description>TN AB</description>
-            <param>a_q_d</param>
-        </service>
-    </services>
+    <service key="43">
+        <active cw="*43#"> </active>
+        <query cw="*#43#"> </query>
+        <deactive cw="#43#"> </deactive>
+    </service>
 
-    <params>
-        <param key="ac_qr_deac">
-            <activate>active</activate>
-            <query>query</query>
-            <cancel>deactive</cancel>
-        </param>
-        <param key="a_q_d">
-            <activate>a</activate>
-            <query>q</query>
-            <cancel>d</cancel>
-        </param>
-    </params>
+    <service key="21">
+        <active cfu="*21*TN#">TN</active>
+        <query cfu="*#21#"> </query>
+        <deactive cfu="#21#"> </deactive>
+    </service>
+
+    <service key="67">
+        <active cfb="*67*TN#">TN</active>
+        <query cfb="*#67#"> </query>
+        <deactive cfb="#67#"> </deactive>
+    </service>
+
+    <service key="61">
+        <active cfnr="*61*TN#">TN</active>
+        <query cfnr="*#61#"> </query>
+        <deactive cfnr="#61#"> </deactive>
+    </service>
+
+    <service key="62">
+        <active cfnrc="*62*TN#">TN</active>
+        <query cfnrc="*#62#"> </query>
+        <deactive cfnrc="#62#"> </deactive>
+    </service>
+
+    <service key="63">
+        <active cfnl="*63*TN#">TN</active>
+        <query cfnl="*#63#"> </query>
+        <deactive cfnl="#63#"> </deactive>
+    </service>
+
+    <service key="95">
+        <active conf3pty="*95*TN#">TN</active>
+        <query conf3pty="*#95#"> </query>
+        <deactive conf3pty="#95#"> </deactive>
+    </service>
+
+    <service key="99">
+        <activate test="*99*TN*AB#">TN AB</activate>
+        <query test="*#99#"> </query>
+        <cancel test="#99#"> </cancel>
+    </service>
 
 </rule>

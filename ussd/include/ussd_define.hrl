@@ -46,66 +46,9 @@
 % Activate  *95#
 % Query     *#95#
 % Cancel    #95#
--define(UssdData, #{
-  "43"=>cw,
-  "21"=>cfu,
-  "67"=>cfn,
-  "61"=>cfnr,
-  "62"=>cfnrc,
-  "63"=>cfnl,
-  "95"=>conf_3pty}).
--define(UssdDataWithTelephone, #{
-  "21"=>cfu,
-  "67"=>cfn,
-  "61"=>cfnr,
-  "62"=>cfnrc,
-  "63"=>cfnl}).
--define(UssdDataWithoutTelephone, #{
-  "43"=>cw,
-  "95"=>conf_3pty}).
-
--record(service_info,{
-  name,
-  activate,
-  query,
-  cancel,
-  use,
-  description,
-  param
-}).
--record(param_info,{
-  activate,
-  query,
-  cancel,
-  use
-}).
-
 -record(rule, {
   default = [],
   value = []
 }).
 
--record(services, {
-  default = [],
-  value = []
-}).
-
--record(service, {
-  key,
-  info
-}).
-
--record(key, {
-  value
-}).
-
-
--record(params, {
-  default = [],
-  value = []
-}).
--record(param, {
-  key,
-  info
-}).
-
+-define(value(A, B, C, D), {A,[{B,C}],D}).
