@@ -1,6 +1,5 @@
 # USSD 
-
-##Tổ chức file:
+## Tổ chức file:
 - include:
     + ussd_define: định nghĩa record rule dùng cho việc load config
     và macro value dùng cho việc matching khi duyệt value
@@ -28,7 +27,7 @@
         - test_1000000: test hiệu năng với việc chạy 1.000.000 lần hàm handle_ussd.
         - test_performance: test hiệu năng bằng cách sinh 1 lượng N các ussd ngẫu nhiên.
 
-##Giải thuật:
+## Giải thuật:
 - Input: 1 string chứa ussd code, ví dụ: `"*21*0123456789#"`
 - Output: một tuple chứa trên module, function và một list các param, hoặc invalid
 ví dụ: `{cfu, active, ["0123456789"]}`
@@ -44,7 +43,7 @@ cfu là tên module trong output, `"*21*TN#"` là mã ussd, TN là chú thích.
 để chuẩn hóa chuỗi cho việc dùng hàm *re:run* để lọc ra chú thích đó và trả về param trong output.
 
 
-##Các kết quả test:
+## Các kết quả test:
 - Test hàm `ussd_client:test_100000().` kết quả được ~1 giây.
 ```
     Testing 100.000 cases with: 1123 milliseconds
@@ -72,7 +71,7 @@ cfu là tên module trong output, `"*21*TN#"` là mã ussd, TN là chú thích.
     Time for processing 1 ussd: 0.0088 milliseconds
 ```
            
-##Cách test:
+## Cách test:
 Đầu tiên, di chuyển đến thư mục `src` 
 ```
 cd ussd/src
