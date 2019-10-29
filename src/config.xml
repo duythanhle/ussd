@@ -1,0 +1,50 @@
+<rule>
+    <service key="43">
+        <active cw="*43#"> </active>
+        <query cw="*#43#"> </query>
+        <deactive cw="#43#"> </deactive>
+    </service>
+
+    <service key="21">
+        <active cfu="*21*TN#">TN</active>
+        <query cfu="*#21#"> </query>
+        <deactive cfu="#21#"> </deactive>
+    </service>
+
+    <service key="67">
+        <active cfb="*67*TN#">TN</active>
+        <query cfb="*#67#"> </query>
+        <deactive cfb="#67#"> </deactive>
+    </service>
+
+    <service key="61">
+        <active cfnr="*61*TN#">TN</active>
+        <query cfnr="*#61#"> </query>
+        <deactive cfnr="#61#"> </deactive>
+    </service>
+
+    <service key="70">
+        <active cfnrc="*70*TN#">TN</active>
+        <query cfnrc="*#70#"> </query>
+        <deactive cfnrc="#70#"> </deactive>
+    </service>
+
+    <service key="63">
+        <active cfnl="*63*TN#">TN</active>
+        <query cfnl="*#63#"> </query>
+        <deactive cfnl="#63#"> </deactive>
+    </service>
+
+    <service key="95">
+        <active conf3pty="*95#"> </active>
+        <query conf3pty="*#95#"> </query>
+        <deactive conf3pty="#95#"> </deactive>
+    </service>
+
+    <service key="99">
+        <active test="*99*TN*AB#">TN AB</active>
+        <query test="*#99#"> </query>
+        <deactive test="#99#"> </deactive>
+    </service>
+
+</rule>
